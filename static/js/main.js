@@ -14,7 +14,7 @@ async function onChange(inputEl){
 
 function updateResults(imgURI){
 	updatePreview(imgURI);
-	fillResults(imgURI);
+	fillResult(imgURI);
 }
 
 
