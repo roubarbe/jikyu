@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./css/main.css">
 		<script src="./js/main.js"></script>
 		<title>Jikyu</title>
@@ -11,18 +12,20 @@
 	<body>
 		<h1 id="title">jikyū</h1>
 		<div id="app">
-			<h2>Choose a file or paste in window</h2>
+			<!-- <h2>Choose a file or paste in window</h2> -->
 			<div id="imgUpload">
 				<div id="inputFile">
-					<input type="file" id="pictInput">
+					<label for="pictInput">Choose a file</label>
+					<input type="file" name="pictInput" id="pictInput" onchange="onChange(this.files[0])">
+					<h2>Or paste in window</h2>
 				</div>
 				<div id="imgPreview">
 					<img id="imgTag">
 				</div>
 			</div>
 			<div id="result">
-				<div id="label">Your tag:</div>
-				<input type="text" id="resultTag">
+				<label for="resultTage">Your tag:</label>
+				<input type="text" name="resultTag" id="resultTag" disabled>
 			</div>
 		</div>
 	</body>

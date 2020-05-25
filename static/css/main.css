@@ -25,6 +25,7 @@ html, body {
   border-radius: 5px;
   padding: 5px;
   margin: 0 auto;
+  margin-top: 5px;
   height: 50vh;
   -webkit-box-shadow: 0 10px 20px -15px #000;
           box-shadow: 0 10px 20px -15px #000;
@@ -35,5 +36,118 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#app h2 {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+#app #imgUpload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app #inputFile {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-transition: width 0.1s ease-in-out;
+  transition: width 0.1s ease-in-out;
+}
+
+#app #inputFile input {
+  visibility: hidden;
+  width: 0px;
+  display: none;
+}
+
+#app #inputFile label {
+  background: #bbdbff;
+  color: #3c98ff;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-transition: background 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+#app #inputFile label:hover {
+  background: #c5e0ff;
+}
+
+#app #inputFile label:active {
+  background: #a2ceff;
+}
+
+#app #imgPreview {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  border: 2px dotted #bbdbff;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 50%;
+  max-height: 100%;
+  text-align: center;
+  -webkit-transition: width 0.1s ease-in-out;
+  transition: width 0.1s ease-in-out;
+}
+
+#app #imgPreview img {
+  max-width: 100%;
+  -webkit-transition: width 0.1s ease-in-out;
+  transition: width 0.1s ease-in-out;
+}
+
+#app #result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+  height: 30px;
+}
+
+#app #result label {
+  font-size: 16px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+#app #result input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  font-size: 16px;
+  font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+  border: 1px solid #bbdbff;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
 }
 /*# sourceMappingURL=main.css.map */
