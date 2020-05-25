@@ -14,5 +14,11 @@
     "datauri"
   ],
   "author": "Xavier Provost <provost.pascal@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/roubarbe/jikyu.git"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
