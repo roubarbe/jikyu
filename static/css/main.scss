@@ -26,6 +26,11 @@ html, body{
 	background-clip: text;
 }
 
+h3{
+	color: white;
+	text-align: center;
+}
+
 #app{
 	width: 50vw;
 	border: 1px solid black;
@@ -46,11 +51,6 @@ html, body{
 		// margin-top: 5px;
 		font-size: 16px;
 		font-weight: normal;
-	}
-
-	h3{
-		color: white;
-		text-align: center;
 	}
 
 	#imgUpload{
