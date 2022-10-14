@@ -40,6 +40,10 @@ html, body {
   font-size: 16px;
   font-weight: normal;
 }
+#app h3 {
+  color: white;
+  text-align: center;
+}
 #app #imgUpload {
   display: flex;
   flex-direction: row;
