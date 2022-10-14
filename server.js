@@ -1,7 +1,7 @@
-console.log("Loading Express...");
+console.log("Loading Express... ");
 let express = require("express");
 
-console.log("Initializing Express...");
+console.log("Initializing Express... ");
 let app = express();
 
 app.use(express.static('static'));
