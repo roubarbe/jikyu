@@ -1,8 +1,8 @@
 html, body {
   padding: 0;
   margin: 0;
-  background: #ffffff;
-  font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+  background: #29262e;
+  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
 }
 
 #title {
@@ -16,28 +16,23 @@ html, body {
   color: transparent;
   text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   background-clip: text;
 }
 
 #app {
   width: 50vw;
-  border: 1px solid #dddddd;
+  border: 1px solid black;
+  background: #727289;
   border-radius: 5px;
   padding: 5px;
   margin: 0 auto;
   margin-top: 5px;
   height: 50vh;
-  -webkit-box-shadow: 0 10px 20px -15px #000;
-          box-shadow: 0 10px 20px -15px #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0 10px 20px -15px #000;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 #app h2 {
   margin: 0;
   margin-top: 5px;
@@ -45,102 +40,66 @@ html, body {
   font-size: 16px;
   font-weight: normal;
 }
-
 #app #imgUpload {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  flex: 1 0 auto;
+  align-items: center;
 }
-
 #app #inputFile {
   text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  -webkit-transition: width 0.1s ease-in-out;
+  flex: 1 0 auto;
   transition: width 0.1s ease-in-out;
 }
-
 #app #inputFile input {
   visibility: hidden;
   width: 0px;
   display: none;
 }
-
 #app #inputFile label {
   background: #bbdbff;
-  color: #3c98ff;
+  color: black;
   padding: 5px;
   border-radius: 5px;
-  -webkit-transition: background 0.1s ease-in-out;
   transition: background 0.1s ease-in-out;
   cursor: pointer;
 }
-
 #app #inputFile label:hover {
   background: #c5e0ff;
 }
-
 #app #inputFile label:active {
   background: #a2ceff;
 }
-
 #app #imgPreview {
   max-width: 50%;
   text-align: center;
 }
-
 #app #imgPreview img {
   max-height: 44vh;
   border: 2px dotted #bbdbff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   padding: 5px;
   max-width: 100%;
 }
-
 #app #result {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   margin-top: 5px;
   height: 30px;
 }
-
 #app #result label {
   font-size: 16px;
   margin-right: 5px;
   font-weight: bold;
 }
-
 #app #result input {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  flex: 1 0 auto;
   font-size: 16px;
-  font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+  font-family: "Roboto Mono", "Courier New", Courier, monospace;
   border: 1px solid #bbdbff;
   border-radius: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 5px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

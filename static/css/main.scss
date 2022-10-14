@@ -1,5 +1,5 @@
-$colorBG: #ffffff;
-$colorBGalt: #dddddd;
+$colorBG: #29262e;
+$colorBGalt: #727289;
 $colorHighlight: #d8aeff;
 $colorHighlightAlt: #bbdbff;
 $colorDark: darken($color: $colorHighlightAlt, $amount: 25);
@@ -28,7 +28,8 @@ html, body{
 
 #app{
 	width: 50vw;
-	border: 1px solid $colorBGalt;
+	border: 1px solid black;
+	background: $colorBGalt;
 	border-radius: 5px;
 	padding: 5px;
 	margin: 0 auto;
@@ -68,7 +69,7 @@ html, body{
 
 		label{
 			background: $colorHighlightAlt;
-			color: $colorDark;
+			color: black;
 			padding: 5px;
 			border-radius: 5px;
 			transition: background 0.1s ease-in-out;
