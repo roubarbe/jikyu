@@ -7,5 +7,5 @@ let app = express();
 app.use(express.static('static'));
 
 app.listen(process.env.PORT || 21134, function () {
-	console.log('Jikyu running on port', process.env.PORT || 21134);
+	console.log('Jikyu running on port: ', process.env.PORT || 21134);
 });
